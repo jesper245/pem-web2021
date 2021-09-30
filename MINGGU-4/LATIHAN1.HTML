@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulir</title>
+</head>
+<style>
+    h1 {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: rgb(9, 188, 248);
+}
+    input[type=reset] {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    }
+    
+    input[type=submit] {
+    margin-top: 50px;;
+    margin-right:  50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: chartreuse;
+    }
+    
+    body {
+    background-image: url("download.jpg");
+    background-size: cover;
+    color: cornsilk;
+    }
+
+</style>
+<body>
+    <div class="form">
+    <h1 style="color:rgb(255, 255, 255)"><center>Latihan Formulir</center></h1>
+    <table>
+        <form action="simpanform.php" method="POST">
+            <tr>
+                <td>Nama Lengkap</td><td><input type="text" name="nama_lengkap" size="50"></td>
+            </tr>
+            <tr>
+                <td>Tanggal lahir</td><td><input type="text" name="Tangal_lahir" size="50"></td>
+            </tr>
+                <tr>
+                <td>Jenis Kelamin</td><td> 
+                <input type="radio" name="jenis_kelamin" value="L">Laki-Laki / 
+                <input type="radio" name="jenis_kelamin" value="P">Perempuan</td>
+            </tr>
+            <tr>
+                <td>Alamat</td><td> <input type="text" name="alamat" size="50"></td></tr>
+            <tr>
+                <td>Email</td><td> <input type="email" name="email" size="50"></td></tr>
+            <tr>
+                <td>Nomor HP</td><td> <input type="text" name="nomor_hp" size="50"></td>
+            </tr>
+            <tr>
+                <td></td><td>
+                <input name="submit" type="submit" value="Submit"style="color:rgb(255, 255, 255)">
+                <input name="reset" type="reset" value="Reset"style="color:rgb(255, 255, 255)"></td>
+            </tr>
+        </form>
+    </table>
+</div>
+</body>
+</html>
