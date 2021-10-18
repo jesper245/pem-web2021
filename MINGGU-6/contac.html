@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Project Web</title>
+    <style>
+        body, h1, h2, p, a,td, span {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+    
+        .wrap {
+            background-color:rgba(48, 48, 48, 0.767);
+            width: 800px;
+            color:rgb(252, 252, 252);
+            margin: 20px auto;
+            padding:50px;
+            border-radius: 3%;
+        }
+
+        .icon {
+            padding:5px;
+            text-align: center;
+        }
+
+        span {
+            color:rgb(253, 108, 222);
+        }
+
+        .copyright {
+            color: rgb(253, 108, 222);
+        }
+        
+        /* Navigasi Menu */
+        .navigasi{
+            background-color: rgb(0, 0, 0);
+            overflow: hidden;
+        }
+        .navigasi a:hover{
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(14, 47, 236);
+        }
+        .navigasi a{
+            float: left;
+            display: block;
+            text-align: center;
+            color: rgb(247, 241, 241);
+            text-decoration: none;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body style="background: url(background.jpg);background-size: cover;background-attachment: fixed;">
+    <nav class="navigasi">
+        <a href="index.html">Home</a>
+        <a href="Jesper.pdf">Download PDF</a>
+        <a href="contac.html">Kontak</a>
+        <a href="about.html">About me</a>
+    </nav>
+    <div class="wrap">
+        <h1 align="center"><span>Kontak</span></h1>
+        <hr>
+        <div>
+            <h1>Kontak Saya </h1>
+            <form>
+                <label for="email">Email</label><br />
+                <input type="email" name="email" placeholder="alamatemail"/>
+                <br />
+                <label for="message">Pesan</label><br />
+                <textarea name="message" placeholder="Tulis pesan anda..."rows="4" cols="80"></textarea>
+                <br />
+                <br />
+                <input type="submit" value="Kirim" />
+            </form>
+        </div>
+            <hr>
+            <footer>
+                <p align="center" class="copyright"><b><i>
+                    Copyright © <a>Jesper</a> 2021</i></b>
+                </p>
+            </footer>
+    </div>
+
+</body>
+</html>
